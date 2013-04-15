@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zmqchat", "zmqchat\zmqchat.csproj", "{8ABC358C-EC8D-4D04-87CB-C07024A196D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{3D61097B-C68B-4CD8-85CB-DBE498FF924A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{9AE8464C-D35D-4FF3-8B13-91135A446FB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{8ABC358C-EC8D-4D04-87CB-C07024A196D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ABC358C-EC8D-4D04-87CB-C07024A196D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ABC358C-EC8D-4D04-87CB-C07024A196D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D61097B-C68B-4CD8-85CB-DBE498FF924A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D61097B-C68B-4CD8-85CB-DBE498FF924A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D61097B-C68B-4CD8-85CB-DBE498FF924A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D61097B-C68B-4CD8-85CB-DBE498FF924A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AE8464C-D35D-4FF3-8B13-91135A446FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AE8464C-D35D-4FF3-8B13-91135A446FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AE8464C-D35D-4FF3-8B13-91135A446FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AE8464C-D35D-4FF3-8B13-91135A446FB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

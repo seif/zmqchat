@@ -10,18 +10,14 @@ namespace Client
         {
             // ZMQ Context and client socket
             using (ZmqContext context = ZmqContext.Create())
-            using (ZmqSocket client = context.CreateSocket(SocketType.REQ))
+            using (ZmqSocket client = context.CreateSocket(SocketType.PUB))
             {
-                client.Connect("tcp://localhost:5555");
+                client.Bind("tcp://*:9000");
 
-                string request = "Hello";
-                for (int requestNum = 0; requestNum < 10; requestNum++)
+                while (true)
                 {
-                    Console.WriteLine("Sending request {0}...", requestNum);
-                    client.Send(request, Encoding.Unicode);
-
-                    string reply = client.Receive(Encoding.Unicode);
-                    Console.WriteLine("Received reply {0}: {1}", requestNum, reply);
+                    var message = Console.ReadLine();
+                    client.Send("seif: " + message, Encoding.ASCII);
                 }
             }
         }

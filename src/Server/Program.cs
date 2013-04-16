@@ -16,7 +16,7 @@ namespace Server
                 server.SubscribeAll();
                 for (int i = 1; i < 255; i++)
                 {
-                    string address = string.Format("192.168.11.{0}:9000", i);
+                    string address = string.Format("tcp://192.168.11.{0}:9000", i);
                     try
                     {
                         server.Connect(address);
